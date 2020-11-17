@@ -2,7 +2,9 @@
 
 ## Context ##
 The aim of this project is to create a Full-Stack Solution for **Groupomania**.
+
 The project will be to build an internal social network for Groupomania's employees.
+
 This is the Project 7 for the Junior Web Developer path.
 
 
@@ -20,15 +22,15 @@ You will need to installed:
 
 
 ## Setup the MySQL Database ##
-Open your terminal
-Connect to MySQL: `mysql -h localhost -u root -p`
-Insert your password
-Import and run the database Script: `groupomania_db.sql;`
 
-In the backend folder, go to the `connectdb.js` file and enter your password in password: 'xx'
+- Open your terminal
+- Connect to MySQL: `mysql -h localhost -u root -p`
+- Insert your password
+- Import and run the database Script: `groupomania_db.sql;`
+- In the backend folder, go to the `connectdb.js` file and enter your password in password: 'xx'
 
 
-## Installation - Backen ##
+## Installation - Backend ##
 
 Within the **Backend folder** (`cd Backend`) run `npm install`.
 
