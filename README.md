@@ -14,7 +14,7 @@ You will need to installed:
 - `Vue.js`
 - `MySQL`
 
-## First step##
+## First steps ##
 1. First step is to **clone this repo**
 2. Then Setup the **MySQL Database**
 3. Installing and Connect the **Frontend**
