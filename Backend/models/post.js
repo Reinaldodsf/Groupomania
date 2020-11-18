@@ -23,7 +23,7 @@ class PostsModels {
         return new Promise((resolve) =>{
             connectdb.query(sql, function (err, result, fields) {
                 if (err) throw err;
-                resolve({message : 'Nouveau post !'});
+                resolve({message : 'New Post created with success'});
             })       
         })
     }
@@ -39,10 +39,10 @@ class PostsModels {
                     sql2 = mysql.format(sql2, sqlInserts2);
                     connectdb.query(sql2, function (err, result, fields){
                         if (err) throw err;
-                        resolve({message : 'Post modifié !'});
+                        resolve({message : 'Post Modified with success'});
                     })
                 }else{
-                    reject({error: 'fonction indisponible'});
+                    reject({error: 'Request unavailable'});
                 }
             })
         });
@@ -59,10 +59,10 @@ class PostsModels {
                     sql2 = mysql.format(sql2, sqlInserts2);
                     connectdb.query(sql2, function (err, result, fields){
                         if (err) throw err;
-                        resolve({message : 'Post supprimé !'});
+                        resolve({message : 'Post deleted'});
                     })
                 }else{
-                    reject({error: 'fonction indisponible'});
+                    reject({error: 'Request unavailable'});
                 }
             
             });
@@ -87,7 +87,7 @@ class PostsModels {
         return new Promise((resolve) =>{
             connectdb.query(sql, function (err, result, fields){
                 if (err) throw err;
-                resolve({message : 'Nouveau commentaire !'})
+                resolve({message : 'New comment added with success'})
             })
         })
     }
@@ -103,10 +103,10 @@ class PostsModels {
                     sql2 = mysql.format(sql2, sqlInserts2);
                     connectdb.query(sql2, function (err, result, fields){
                         if (err) throw err;
-                        resolve({message : 'Comment Modified!'});
+                        resolve({message : 'Comment modified with success!'});
                     })
                 }else{
-                    reject({error: 'fonction indisponible'});
+                    reject({error: 'Request unavailable'});
                 }
             })
         });
@@ -123,10 +123,10 @@ class PostsModels {
                     sql2 = mysql.format(sql2, sqlInserts2);
                     connectdb.query(sql2, function (err, result, fields){
                         if (err) throw err;
-                        resolve({message : 'Commentaire supprimé !'});
+                        resolve({message : 'Comment deleted'});
                     })
                 }else{
-                    reject({error: 'fonction indisponible'});
+                    reject({error: 'Request unavailable'});
                 }
             
             });
@@ -159,13 +159,13 @@ class PostsModels {
             if(liked === false){
                 connectdb.query(sql1, function (err, result, fields){
                     if (err) throw err;
-                    resolve({ message: 'Like !'})
+                    resolve({ message: 'Liked'})
                 })
             }
             if(liked === true){
                 connectdb.query(sql3, function(err, result, fields){
                     if(err) throw err;
-                    resolve({ message : 'Like annulé!' })
+                    resolve({ message : 'Unliked' })
                 })
             }
         })

@@ -15,7 +15,7 @@ exports.getAllPosts = (req, res, next) => {
                 res.status(200).json(JSON.stringify(response));
             })
     }else{
-        res.status(400).json({error: 'Requête non authorisée'})
+        res.status(400).json({error: 'Request unavailable'})
     }
 }
 exports.deletePost = (req, res, next) => {
@@ -33,7 +33,7 @@ exports.deletePost = (req, res, next) => {
                 res.status(200).json(JSON.stringify(response));
             })
     }else{
-        res.status(400).json({error: 'Requête non authorisée'})
+        res.status(400).json({error: 'Request unavailable'})
     }
 }
 exports.getAllComments = (req, res, next) => {
@@ -46,7 +46,7 @@ exports.getAllComments = (req, res, next) => {
                 res.status(200).json(JSON.stringify(response));
             })
     }else{
-        res.status(400).json({error: 'Requête non authorisée'})
+        res.status(400).json({error: 'Request unavailable'})
     }
 }
 exports.deleteComment = (req, res, next) => {
@@ -64,6 +64,6 @@ exports.deleteComment = (req, res, next) => {
                 res.status(200).json(JSON.stringify(response));
             })
     }else{
-        res.status(400).json({error: 'Requête non authorisée'})
+        res.status(400).json({error: 'Request unavailable'})
     }
 }

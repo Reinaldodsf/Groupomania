@@ -13,7 +13,7 @@ exports.getAllPosts = (req, res, next) => {
         });
 }
 exports.createPost = (req, res, next) => { 
-    let title = req.body.title;
+    let title = req.body.title; 
     let userId = req.body.userId;
     let content = req.body.content;
     let sqlInserts = [userId, title, content];

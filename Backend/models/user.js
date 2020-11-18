@@ -54,7 +54,7 @@ class UserModels {
         return new Promise((resolve, reject) =>{
             connectdb.query(sql, function(err, result){
                 if (err) {
-                    return reject({error : 'Page unavailable'});
+                    return reject({error : 'Request unavailable'});
                 } else {
                     resolve(result);
                 }

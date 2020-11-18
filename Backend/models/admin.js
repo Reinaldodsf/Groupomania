@@ -22,7 +22,7 @@ class ModModels {
         return new Promise((resolve) =>{
             connectdb.query(sql, function (err, result, fields){
                 if (err) throw err;
-                resolve({message : 'Post supprimé !'});
+                resolve({message : 'Post deleted'});
             })
         })
     };
@@ -42,7 +42,7 @@ class ModModels {
         return new Promise((resolve) =>{
             connectdb.query(sql, function (err, result, fields){
                 if (err) throw err;
-                resolve({message : 'Commentaire supprimé !'});
+                resolve({message : 'Comment deleted'});
             })
         })
     }
