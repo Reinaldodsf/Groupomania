@@ -13,7 +13,7 @@ class UserModels {
         return new Promise((resolve, reject) =>{
             connectdb.query(sql, function(err, result){
                 if (err) reject({error : 'Error in the Sign In! Please Login'});
-                resolve({message : 'Sign In completed with Success!'})
+                resolve({message : 'Sign Up completed with Success!'})
             })
         })
     }

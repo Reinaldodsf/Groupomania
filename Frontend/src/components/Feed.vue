@@ -56,11 +56,11 @@
                             <v-card-text>
                                 <v-form ref="form" v-model="valid">
                                     <v-text-field v-model="dataPost.title" :rules="titleCheck" :counter="50" label="Tittle"></v-text-field>
-                                    <v-textarea v-model="dataPost.content" :rules="contentCheck" label="Comment"></v-textarea>
+                                    <v-textarea v-model="dataPost.content" :rules="contentCheck" label="Message"></v-textarea>
                                 </v-form>
                             </v-card-text>
                             <v-card-actions>
-                                <v-btn @click="dialogUpPost=false" class="secondary">Cancel</v-btn>
+                                <v-btn @click="closeEditPost()" class="secondary">Cancel</v-btn>
                                 <v-btn :disabled="!valid" class="success" @click="updatePost()">Submit</v-btn>
                             </v-card-actions>
                         </v-card>
@@ -182,6 +182,10 @@ export default {
             this.$router.push('/Home/Feed/Post')
         },
 
+        closeEditPost(){
+            this.dialogUpPost = false;
+        },
+        
         goDialogUpPost(postTitle, postContent, postId){
             this.dataPost.title = postTitle;
             this.dataPost.content = postContent;

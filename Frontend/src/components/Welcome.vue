@@ -39,7 +39,7 @@
 
           <p class="subheading font-weight-regular">
             Ready to share some interesting and funny content with your collegues?
-            <br>Sign In if you still don't have an account.
+            <br>Sign Up if you still don't have an account.
           </p>
         </v-col>
 
@@ -49,7 +49,7 @@
         >
           <v-container justify="center" class="auth">
               <div class="auth__boutons">
-                  <v-btn class="auth__boutons--ind mx-5 px-5" color="primary" @click="component='signup'" rounded>Sign in</v-btn>                    
+                  <v-btn class="auth__boutons--ind mx-5 px-5" color="primary" @click="component='signup'" rounded>Sign Up</v-btn>                    
                   <v-btn class="auth__boutons--ind mx-5 px-5" color="primary" @click="component='login'" rounded>Login</v-btn>
               </div>
               <component v-bind:is="component"></component>    

@@ -40,7 +40,7 @@
                     ></v-text-field>
                 </v-form>
                 
-                <v-btn :disabled="!valid" class="success my-5" @click="Signup()()">Sign In</v-btn>
+                <v-btn :disabled="!valid" class="success my-5" @click="Signup()()">Sign Up</v-btn>
                 <p v-if="msg">{{ message }}</p>
 
             </v-card-text>
